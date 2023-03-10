@@ -1,0 +1,17 @@
+budjet = int(input())
+
+spend_money = 0 
+
+while spend_money <= budjet:
+    product_price = input()
+    
+    if product_price == "End":
+        print("You bought everything needed.")
+        break
+    
+    product_price = int(product_price)
+    
+    spend_money += product_price
+
+else:
+    print("You went in overdraft!")
