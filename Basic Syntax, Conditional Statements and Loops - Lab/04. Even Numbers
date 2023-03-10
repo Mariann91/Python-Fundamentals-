@@ -1,0 +1,17 @@
+number = int(input())
+
+counter = 0
+even_counter = 0
+
+for num in range(number):
+    current_number = int(input())
+    counter += 1
+    
+    if current_number % 2 == 0:
+        even_counter += 1 
+        
+        if even_counter == number:
+            print("All numbers are even.")
+    else:
+        print(f"{current_number} is odd!" )
+        break
