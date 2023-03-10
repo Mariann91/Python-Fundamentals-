@@ -1,0 +1,10 @@
+end_of_program = False
+
+while not end_of_program:
+    current_number = float(input())
+    
+    if 1 <= current_number <= 100:
+        end_of_program = True
+        
+else:
+    print(f"The number {current_number} is between 1 and 100")
